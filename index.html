@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio — AI / Full-stack / Product Engineer." />
+  <title>Your Name — AI / Full-stack / Product Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Top navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand">
+        <span class="prompt">~/</span>your-name
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">about</a>
+        <a href="#skills">skills</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">contact</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <p class="hero__eyebrow"><span class="blink">$</span> whoami</p>
+        <h1 class="hero__name">Your Name</h1>
+        <h2 class="hero__title">
+          AI <span class="sep">/</span> Full-stack <span class="sep">/</span> Product Engineer
+        </h2>
+        <p class="hero__tagline">
+          I design and ship end-to-end products — from model-backed features
+          to the interfaces people actually use.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View projects</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">01.</span> About</h2>
+        <div class="about">
+          <div class="about__body">
+            <p>
+              I'm a product-minded engineer working across the full stack, with a
+              focus on applied AI. I care about turning ambiguous problems into
+              shipped, reliable software that delivers measurable value.
+            </p>
+            <p>
+              My work spans machine-learning features, backend services and the
+              front-end experiences that tie them together. I favor pragmatic
+              architecture, clear code and tight feedback loops over premature
+              complexity.
+            </p>
+            <p>
+              I value clarity, ownership and calm execution — building things that
+              are correct, maintainable and genuinely useful to the people who
+              depend on them.
+            </p>
+          </div>
+          <aside class="about__facts" aria-label="Quick facts">
+            <div class="fact">
+              <span class="fact__key">focus</span>
+              <span class="fact__val">Applied AI &amp; product engineering</span>
+            </div>
+            <div class="fact">
+              <span class="fact__key">based in</span>
+              <span class="fact__val">Your City, Country</span>
+            </div>
+            <div class="fact">
+              <span class="fact__key">experience</span>
+              <span class="fact__val">X+ years shipping software</span>
+            </div>
+            <div class="fact">
+              <span class="fact__key">status</span>
+              <span class="fact__val">Open to opportunities</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">02.</span> Skills &amp; Tech Stack</h2>
+        <div class="skills">
+          <article class="skill-card">
+            <h3 class="skill-card__title">AI / ML</h3>
+            <ul class="tags">
+              <li>LLM applications</li>
+              <li>RAG</li>
+              <li>Prompt engineering</li>
+              <li>PyTorch</li>
+              <li>Hugging Face</li>
+              <li>Embeddings</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Frontend</h3>
+            <ul class="tags">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>HTML5</li>
+              <li>CSS / Tailwind</li>
+              <li>Accessibility</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Backend</h3>
+            <ul class="tags">
+              <li>Node.js</li>
+              <li>Python</li>
+              <li>Go</li>
+              <li>REST / GraphQL</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3 class="skill-card__title">Engineering &amp; Tools</h3>
+            <ul class="tags">
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>CI/CD</li>
+              <li>AWS / GCP</li>
+              <li>Git</li>
+              <li>Observability</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">03.</span> Projects</h2>
+        <div class="projects">
+          <!-- Project 1 -->
+          <article class="project">
+            <header class="project__head">
+              <h3 class="project__title">Project Alpha</h3>
+              <div class="project__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </header>
+            <p class="project__desc">
+              <strong>Background:</strong> A team needed to search a large internal
+              knowledge base in natural language.
+              <strong>Stack:</strong> Next.js, Python, PostgreSQL with pgvector, OpenAI embeddings.
+              <strong>Contribution:</strong> Designed the retrieval pipeline and built the
+              end-to-end RAG interface.
+              <strong>Result:</strong> Cut average lookup time by ~60% and drove adoption
+              across three teams.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Next.js</li><li>Python</li><li>pgvector</li><li>RAG</li>
+            </ul>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project">
+            <header class="project__head">
+              <h3 class="project__title">Project Beta</h3>
+              <div class="project__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </header>
+            <p class="project__desc">
+              <strong>Background:</strong> A real-time analytics dashboard was needed for
+              a high-volume event stream.
+              <strong>Stack:</strong> React, Go, Redis, WebSockets.
+              <strong>Contribution:</strong> Owned the streaming backend and the live
+              charting frontend.
+              <strong>Result:</strong> Delivered sub-second updates at 10k events/sec with
+              stable memory usage.
+            </p>
+            <ul class="tags tags--sm">
+              <li>React</li><li>Go</li><li>Redis</li><li>WebSockets</li>
+            </ul>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project">
+            <header class="project__head">
+              <h3 class="project__title">Project Gamma</h3>
+              <div class="project__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </header>
+            <p class="project__desc">
+              <strong>Background:</strong> Manual document classification was slow and
+              inconsistent across reviewers.
+              <strong>Stack:</strong> Python, PyTorch, FastAPI, Docker.
+              <strong>Contribution:</strong> Fine-tuned the classifier and shipped it as a
+              containerized service.
+              <strong>Result:</strong> Reached 94% accuracy and removed a recurring manual
+              bottleneck.
+            </p>
+            <ul class="tags tags--sm">
+              <li>PyTorch</li><li>FastAPI</li><li>Docker</li><li>NLP</li>
+            </ul>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project">
+            <header class="project__head">
+              <h3 class="project__title">Project Delta</h3>
+              <div class="project__links">
+                <a href="#" aria-label="Source code" title="Source code">code</a>
+                <a href="#" aria-label="Live demo" title="Live demo">live</a>
+              </div>
+            </header>
+            <p class="project__desc">
+              <strong>Background:</strong> A growing codebase needed a reliable, automated
+              deployment pipeline.
+              <strong>Stack:</strong> TypeScript, Docker, Kubernetes, GitHub Actions.
+              <strong>Contribution:</strong> Built the CI/CD workflow and infrastructure-as-code
+              setup.
+              <strong>Result:</strong> Reduced deploy time from hours to minutes with
+              zero-downtime releases.
+            </p>
+            <ul class="tags tags--sm">
+              <li>Kubernetes</li><li>Docker</li><li>CI/CD</li><li>IaC</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section section--contact" id="contact">
+      <div class="container">
+        <h2 class="section__title"><span class="section__num">04.</span> Contact</h2>
+        <p class="contact__lead">
+          I'm always open to discussing new projects, roles or collaborations.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:you@example.com">
+            <span class="contact__key">email</span>
+            <span class="contact__val">you@example.com</span>
+          </a>
+          <a class="contact__link" href="https://github.com/your-username" target="_blank" rel="noopener">
+            <span class="contact__key">github</span>
+            <span class="contact__val">github.com/your-username</span>
+          </a>
+          <a class="contact__link" href="https://www.linkedin.com/in/your-username" target="_blank" rel="noopener">
+            <span class="contact__key">linkedin</span>
+            <span class="contact__val">linkedin.com/in/your-username</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year">2026</span> Your Name.</span>
+      <span class="footer__note">Built with HTML, CSS &amp; vanilla JS.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
